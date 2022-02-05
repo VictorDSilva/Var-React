@@ -32,8 +32,7 @@ export default function Routes(){
             <Tab.Screen 
             name="Notícias" 
             component={News}
-            options={{
-                tabBarLabel:'',
+            options={{                
                 tabBarIcon: ({size,color}) => (
                     <Entypo name="news" size={size} color={color}/>
                 )

@@ -1,21 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, Text, View, StyleSheet, Image } from 'react-native';
+import Tips from '../../components/Card/Tips'
 
 export default function App(){
-    return(
-        <View>
-            <Text>
-                Tips
-            </Text>
-        </View>
-    )
+    const [visible, setVisible] = React.useState(false);
+    const [usedKey, setUsedKey] = React.useState(undefined);
+    
+    const showModal = (key) => {
+        setVisible(true);
+        
+        setUsedKey(key);
+    };
+
+    return (
+        <SafeAreaView>
+          <Tips showModal={showModal} visible={visible} setVisible={setVisible} usedKey={usedKey}/>
+        </SafeAreaView>
+    );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor:'#fff',
-        alignItems:'center',
-        justifyContent: 'center',
-    },
-});

@@ -4,8 +4,7 @@ import { Card, Provider as PaperProvider, Title } from 'react-native-paper';
 import { Searchbar, Button, ActivityIndicator } from 'react-native-paper';
 import Hyperlink from 'react-native-hyperlink';
 import { SimpleLineIcons } from '@expo/vector-icons';
-
-
+import styles from '../../components/Styles/Styles'
 
 export default class App extends Component {
   constructor(props) {
@@ -94,53 +93,3 @@ export default class App extends Component {
     );
   }
 };
-
-const styles = StyleSheet.create({
-  safeArea:
-  {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    paddingTop: 5,
-    paddingBottom: 10,
-    paddingLeft: 10
-  },
-  searchbar: {
-    borderRadius: 20,
-    width: "80%"
-  },
-  loading: {
-    flexDirection: "column",
-    marginTop: "60%"
-  },
-  loadingText: {
-    textAlign: "center",
-    color: "#B24BF3"
-  },
-  searchButton: {
-    textAlignVertical: "center",
-    alignItems: "center",
-    fontSize: 30,
-    marginLeft: 20
-  },
-  sectionTitle: {
-    fontSize: 18,
-    marginTop: 0
-  },
-  container: {
-    flex: 1,
-  },
-  card: {
-    paddingTop: 10,
-    margin: 10,
-    marginTop: 0,   
-    borderRadius: 20
-  },
-  content: {
-    padding: 0,
-    marginBottom: 5
-  },
-  link: {
-    color: "#B24BF3",
-    alignItems: "flex-end",
-  },
-})

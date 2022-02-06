@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './pages/Home';
-import News from './pages/News';
+import Source from './pages/Source';
 import Search from './pages/Search';
 import Tips from './pages/Tips';
 import Config from './pages/Config';
@@ -14,9 +14,9 @@ export default function Routes(){
     return(
         <Tab.Navigator
         screenOptions={({ route }) => ({
-            tabBarActiveBackgroundColor:'#121212',                                
-            tabBarActiveTintColor: '#FFF',
-            tabBarInactiveTintColor: 'gray',            
+            tabBarActiveBackgroundColor:'#000',                                
+            tabBarActiveTintColor: '#B24BF3',
+            tabBarInactiveTintColor: '#695E93',            
         })}
         >
             <Tab.Screen 
@@ -30,8 +30,8 @@ export default function Routes(){
             />
            
             <Tab.Screen 
-            name="Notícias" 
-            component={News}
+            name="Fontes" 
+            component={Source}
             options={{                
                 tabBarIcon: ({size,color}) => (
                     <Entypo name="news" size={size} color={color}/>
@@ -43,7 +43,7 @@ export default function Routes(){
             component={Search}
             options={{
                 tabBarIcon: ({focused, size,color}) => (
-                    <Entypo name="news" size={size} color={color}/>
+                    <Feather name="search" size={size} color={color}/>
                 )
             }}
             />

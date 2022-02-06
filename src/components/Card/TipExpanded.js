@@ -4,13 +4,13 @@ import styles from '../Styles/Styles';
 
 export default function TipExpanded ({image, title, content, hideModal}) {
     return(
-      <Card>
+      <Card onPress={hideModal}>
         <Card.Cover source={{ uri: image }} />
         <Card.Content>
             <Title style={styles.sectionTitleTip}>{title}</Title>
             <Paragraph style={styles.sectionTextTip}>{content}</Paragraph>
         </Card.Content>
-        <Button style={styles.linkTip} onPress={hideModal}>OK</Button>
+        <Button style={styles.linkTip} >OK</Button>
       </Card>
     );
   }

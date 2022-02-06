@@ -21,7 +21,6 @@ export default class App extends Component {
     }
 
     getSources() {
-        console.log("teste");
         const elements =
             [
                 {
@@ -56,10 +55,7 @@ export default class App extends Component {
                 },
             ];
 
-        this.setState({ isLoading: true });
-        console.log(elements);
         this.setState({ data: elements });
-        this.setState({ isLoading: false });
     }
 
     render() {
@@ -115,7 +111,6 @@ const styles = StyleSheet.create({
         textAlign: "center",
         color: "#B24BF3"
     },
-
     container: {
         flexGrow: 1,
         margin: 7

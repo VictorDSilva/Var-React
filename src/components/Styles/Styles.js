@@ -5,13 +5,25 @@ const styles = StyleSheet.create({
         padding: 10, 
         width: '40%', 
         marginLeft: '7%', 
-        marginTop: '10%', 
+        marginTop: '10%'
         //borderRadios: 20
     },
     tipList:{ 
         display: "flex", 
         flexDirection:"row", 
         flexWrap:'wrap', 
+        zIndex:0 
+    },
+    configCard:{
+        padding: 10, 
+        width: '86%', 
+        marginLeft: '7%', 
+        marginTop: '4%', 
+        //borderRadios: 20
+    },
+    configList:{ 
+        display: "flex", 
+        width: "100%",
         zIndex:0 
     },
     tipModal:{ 

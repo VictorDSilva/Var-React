@@ -10,7 +10,6 @@ export default function TipExpanded ({image, title, content, hideModal}) {
             <Title style={styles.sectionTitleTip}>{title}</Title>
             <Paragraph style={styles.sectionTextTip}>{content}</Paragraph>
         </Card.Content>
-        <Button style={styles.linkTip} >OK</Button>
       </Card>
     );
   }

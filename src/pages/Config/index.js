@@ -42,7 +42,7 @@ export default function App(){
 
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{height:"100%"}}>
            <View style={styles.configList} key={'Cards'}>
                 {
                     items.map((item, i) => <Tip style={styles.configCard} image={item.image} title={item.title} content={item.content} tipKey={i+1} showModal={showModal} icon={item.icon}/>)

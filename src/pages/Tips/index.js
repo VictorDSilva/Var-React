@@ -36,7 +36,7 @@ export default function App(){
     ]
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{height:"100%"}}>
           <Tips showModal={showModal} visible={visible} setVisible={setVisible} usedKey={usedKey} items={items}/>
         </SafeAreaView>
     );
